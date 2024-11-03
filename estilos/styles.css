@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body{
+    font-family: Verdana;
+    font-size: 17px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+    background-image: url("../imagenes/ganado/3_bajado.png");
+    background-position: center center;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h4 {
+    font-family: Delius;
+    font-size: 2rem;
+    margin: 0px;
+}
+.fotoGanado {
+    border-radius: 15px 15px 15px 15px;
+    width: 100%;
+}
+
+.fotoGanado:hover {
+    opacity: 1;
+    transform: scale(1.5);
+    border-radius: 15px 15px 15px 15px;
+    height: auto;
+    transition: .5s ease;
+}
+
+#containerCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 2px solid chocolate;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.textCard {
+    flex: 1 1 auto;
+    padding: 0 16px;
+}
+
+.card-footer {
+    text-align: center;
+    bottom: 5px;
+
+}
+
+.masInfo{
+    font-size: 14px;
+    font-family: arial;
+    color: grey;
+}
+
+.addCart{
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.addCart:hover {
+    background-color: #555;
+}
+
+.delius-regular {
+    font-family: "Delius", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.ir-arriba{
+    background-repeat:no-repeat;
+    font-size:20px;
+    color:black;
+    cursor:pointer;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    z-index:2;
+}
+
+#mapa{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 35px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    background-color: wheat;
+  }
+
+.espaciado{
+    height: 2em;
+}
+
+/*-------------------- FORMULARIO -------------*/
+input{
+	background-color: #fbfbfb; 
+	width: 408px; 
+	height: 40px; 
+	border-radius: 5px;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: #ab4493; 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+
+textarea{
+    background-color: #fbfbfb; 
+    width: 405px; 
+    height: 150px; 
+    border-radius: 5px;  
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #ab4493; 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+
+label{
+    display: block; 
+    float: center; 	
+}
+
+.btn{
+	height: 45px; 
+	padding-left: 5px;
+	padding-right: 5px; 	
+	margin-bottom: 20px; 
+	margin-top: 10px; 	
+	text-transform: uppercase;
+	background-color: #ab4493; 
+	border-color: #ab4493; 
+	border-style: solid; 
+	border-radius: 10px;	
+	width: 420px;   
+  cursor: pointer;
+}
+
+.formulario{	
+	width: 460px; 
+    height: auto;
+    margin: 80px auto;
+	border-radius: 10px;  
+	padding-top: 30px;
+	padding-bottom: 20px;  
+    background-color: #fbfbfb; 
+    padding-left: 30px; 
+}
+/*-------------------- RESENAS -------------*/
+.checked {
+    color: orange;
+}
+.resenas-container{
+    display: grid;
+    grid-template-rows: 20rem 20rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    gap: 1rem;
+    height: 300px; 
+}
+.resenas{
+    background-color: white;
+    border: 1px solid violet;
+    border-radius: .7rem;
+    width: 15rem;
+    padding: 1rem;
+}
+
+ç* -------------------social ------------------*/
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+/* ----------------------- menu ---------------------- */
+nav {
+    display: block;
+}
+
+.menu {
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    display: block;    
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.burguer{
+    cursor: pointer;
+    font-size: 24px;
+    display: block;
+    padding: 10px;
+    color: white;
+}
+
+  /* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    .menu li {
+      display: inline;
+    }
+
+    .menu a {
+      display: inline-block;
+    }
+
+    .menu ul {
+      display: block;
+    }
+
+    .burguer{
+        display: none;
+      }
+}
+
